@@ -6,7 +6,10 @@ trait TwoWayAttributeCasting
     {
         $casts = collect($this->getCasts());
         $type = $casts->get($key);
-        settype($value, $type);
+
+        if ($type) {
+            settype($value, $type);
+        }
 
         return parent::setAttribute($key, $value);
     }

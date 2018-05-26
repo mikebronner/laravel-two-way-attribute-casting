@@ -41,7 +41,6 @@
             "dont-discover": [
             ],
             "providers": [
-                "GeneaLabs\\LaravelTwoWayAttributeCasting\\Providers\\Service"
             ],
             "aliases": {
             }
